@@ -1,0 +1,4379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building B2311400210 - Assessment Details</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .header .building-id {
+            font-size: 1.8em;
+            font-weight: bold;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .location-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        .location-section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .coordinates {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .coord-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .coord-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .coord-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        .maps-button {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+        }
+        .maps-button:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+        }
+        .assessments-section {
+            padding: 30px;
+        }
+        .assessments-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .assessment-count {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .assessment-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #764ba2;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .assessment-card h3 {
+            color: #764ba2;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        .field-grid {
+            display: grid;
+            gap: 15px;
+        }
+        .field-row {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 10px;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+        }
+        .field-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.95em;
+        }
+        .field-value {
+            color: #333;
+            word-break: break-word;
+        }
+        .no-assessments {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-style: italic;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .coordinates { grid-template-columns: 1fr; }
+            .field-row { grid-template-columns: 1fr; }
+            .field-label { margin-bottom: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏢 GHMC Building Assessment</h1>
+            <div class="building-id">B2311400210</div>
+        </div>
+        
+        <div class="location-section">
+            <h2>📍 Location Information</h2>
+            <div class="coordinates">
+                <div class="coord-box">
+                    <div class="coord-label">Latitude</div>
+                    <div class="coord-value">17.477612</div>
+                </div>
+                <div class="coord-box">
+                    <div class="coord-label">Longitude</div>
+                    <div class="coord-value">78.392638</div>
+                </div>
+            </div>
+            <a href="https://maps.google.com/?q=17.477612,78.392638+(B2311400210)" target="_blank" class="maps-button">
+                🗺️ Open in Google Maps
+            </a>
+        </div>
+        
+        <div class="assessments-section">
+            <h2>📊 Assessment Details</h2>
+            <div class="assessment-count">Total Assessments: 44</div>
+
+            <div class="assessment-card">
+                <h3>Assessment #1</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS5446000000281684</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517384</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Dr. K Ravindranath</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/01/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 1",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 1</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 1: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 1: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 1: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #2</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS2077000000281711</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517387</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Bodepudi Sireesha</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/01/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 1",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 1</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 1: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 1: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 1: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #3</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS9259000000281811</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517388</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">H. Ragavendra.h.kusuma Sree</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D12-F/01/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 1",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 1</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 1: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 1: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 1: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #4</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS8470000000281834</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517385</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Datla Kaushik Varma</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D12-F/01/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 1",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1620"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 1</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 1: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 1: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 1: 1620</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1620</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1620</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #5</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS9475000000282667</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517422</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Nissankarao Vidyavathi</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/10/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 10",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 10</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 10: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 10: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 10: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #6</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS7959000000282656</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517424</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">G Jitendra Prasad</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/10/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 10",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 10</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 10: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 10: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 10: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #7</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS1137000000282684</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517423</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Ravi Agarwal,  Ruchi Singhania & Meera Devi</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/10/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 10",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 10</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 10: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 10: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 10: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #8</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS4272000000282697</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517421</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Yogesh Mangla</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/10/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 10",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 10</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 10: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 10: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 10: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #9</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS7797000000282726</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517427</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Gumma Yagaiah And Padma Gumma</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/11/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 11",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 11: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 11: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 11: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #10</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS5997000000282750</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517428</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Harsh Kumar  Saxena</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/11/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 11",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 11: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 11: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 11: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #11</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS1739000000282715</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517425</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Balbir Singh Bora</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/11/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 11",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 11: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 11: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 11: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #12</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS3747000000282736</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517426</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Manthani Anuradha Reddy</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/11/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 11",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 11: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 11: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 11: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #13</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS4107000000281931</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517389</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Anil Kumar C</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/02/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 2",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 2</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 2: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 2: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 2: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #14</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS7171000000281953</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517391</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Krishna  Kumari Nadella</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D12-F/02/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 2",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 2</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 2: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 2: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 2: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #15</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS6830000000281981</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517390</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Raja Venkata Satyanarayana Raju</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/02/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 2",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 2</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 2: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 2: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 2: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #16</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS7147000000281912</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517392</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Dandekar Suman</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D12-F/02/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 2",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 2</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 2: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 2: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 2: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #17</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS4185000000282174</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517393</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Sajja Papa Rao</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/03/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 3",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 3</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 3: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 3: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 3: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #18</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS5205000000282014</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517396</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Ganeswaram Anil Kumar</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/03/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 3",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 3</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 3: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 3: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 3: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #19</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS1595000000282158</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517395</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Pooja Tuli &  Manish Tuli</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/03/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 3",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 3</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 3: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 3: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 3: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #20</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS5593000000282187</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517394</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">L raja</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/03/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 3",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 3</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 3: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 3: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 3: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #21</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS3369000000282259</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517399</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Bharani Kumar B V</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/04/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 4",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1619"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 4</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 4: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 4: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 4: 1619</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1619</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1619</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #22</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS8626000000282242</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517398</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Sunil Kumar Pal</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/04/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 4",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1619"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 4</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 4: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 4: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 4: 1619</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1619</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1619</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #23</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS1768000000282230</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517400</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Krishnam Raju Gadi</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/04/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 4",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1617"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 4</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 4: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 4: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 4: 1617</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1617</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1617</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #24</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS1152000000282272</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517397</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Rama Krishna T</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/04/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 4",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1619"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 4</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 4: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 4: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 4: 1619</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1619</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1619</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #25</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS5145000000282287</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517401</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Ravi Chandra  Vinukonda</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/05/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 5",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 5</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 5: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 5: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 5: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #26</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS9321000000282343</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517404</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Kamisetti Srinivasu</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/05/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 5",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 5</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 5: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 5: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 5: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #27</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS2598000000282320</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517403</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Vatti Upender Reddy</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/05/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 5",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 5</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 5: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 5: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 5: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #28</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS9355000000282334</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517402</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Varalakshmi Surapaneni</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/05/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 5",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 5</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 5: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 5: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 5: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #29</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS9199000000282365</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517408</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Vejendla Srinivas And Vejendla Sushma Alias Sushma Yalavarthi</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/06/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 6",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 6</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 6: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 6: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 6: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #30</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS8990000000282374</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517406</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">T Lakshmi</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/06/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 6",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 6</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 6: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 6: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 6: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #31</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS4840000000282386</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517407</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Desu Balakrishna Rao</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/06/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 6",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 6</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 6: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 6: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 6: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #32</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS4454000000282457</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517405</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Satish Kumar Y V</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/06/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 6",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 6</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 6: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 6: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 6: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #33</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS3763000000282504</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517410</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Chava Srinivas</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/07/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 7",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 7</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 7: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 7: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 7: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #34</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS1438000000282489</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517411</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Pagadala Venkata Rami  Reddy</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/07/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 7",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 7</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 7: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 7: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 7: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #35</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS8600000000282475</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517409</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">B Sunil Kumar</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/07/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 7",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 7</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 7: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 7: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 7: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #36</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS6519000000282516</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517412</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Chandra Kant Mahipal &  Aruna Soni</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/07/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 7",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 7</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 7: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 7: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 7: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #37</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS5130000000282564</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517415</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Ram Prasad Avvari</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/08/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 8",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 8</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 8: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 8: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 8: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #38</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS3700000000282551</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517414</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Mitali Roy##rajaram Chand</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/08/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 8",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 8</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 8: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 8: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 8: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #39</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS6983000000282574</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517413</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Vinod Kumar Adepu &  Mayuri Adepu</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/08/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 8",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 8</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 8: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 8: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 8: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #40</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS5655000000282534</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517416</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Murali Krishna Bysani</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/08/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 8",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 8</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 8: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 8: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 8: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #41</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS2821000000282591</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517417</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Venkat Raman Pashupati</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/09/01</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 9",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 9</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 9: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 9: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 9: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #42</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS4843000000282631</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517418</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Krishna Mohan Mangalgiri</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/09/02</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 9",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 9</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 9: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 9: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 9: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #43</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS1981000000282601</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517419</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">B Sireesha</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/09/03</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 9",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 9</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 9: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 9: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 9: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="assessment-card">
+                <h3>Assessment #44</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">44</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">11</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS9218000000282641</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141517420</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">Sri Nagesh Kumar</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-RTP-1-D13-F/09/04</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G + 9",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1618"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G + 9</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G + 9: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G + 9: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G + 9: 1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1618</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>Generated by GHMC Building Assessment System</p>
+            <p>Building ID: B2311400210 | Processed: 2025-10-25 13:54</p>
+        </div>
+    </div>
+</body>
+</html>

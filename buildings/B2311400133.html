@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building B2311400133 - Assessment Details</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .header .building-id {
+            font-size: 1.8em;
+            font-weight: bold;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .location-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 3px solid #667eea;
+        }
+        .location-section h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .coordinates {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .coord-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        .coord-label {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .coord-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+        .maps-button {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+        }
+        .maps-button:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+        }
+        .assessments-section {
+            padding: 30px;
+        }
+        .assessments-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .assessment-count {
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .assessment-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #764ba2;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .assessment-card h3 {
+            color: #764ba2;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        .field-grid {
+            display: grid;
+            gap: 15px;
+        }
+        .field-row {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 10px;
+            padding: 12px;
+            background: white;
+            border-radius: 8px;
+        }
+        .field-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.95em;
+        }
+        .field-value {
+            color: #333;
+            word-break: break-word;
+        }
+        .no-assessments {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-style: italic;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .coordinates { grid-template-columns: 1fr; }
+            .field-row { grid-template-columns: 1fr; }
+            .field-label { margin-bottom: 5px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏢 GHMC Building Assessment</h1>
+            <div class="building-id">B2311400133</div>
+        </div>
+        
+        <div class="location-section">
+            <h2>📍 Location Information</h2>
+            <div class="coordinates">
+                <div class="coord-box">
+                    <div class="coord-label">Latitude</div>
+                    <div class="coord-value">17.480318</div>
+                </div>
+                <div class="coord-box">
+                    <div class="coord-label">Longitude</div>
+                    <div class="coord-value">78.392892</div>
+                </div>
+            </div>
+            <a href="https://maps.google.com/?q=17.480318,78.392892+(B2311400133)" target="_blank" class="maps-button">
+                🗺️ Open in Google Maps
+            </a>
+        </div>
+        
+        <div class="assessments-section">
+            <h2>📊 Assessment Details</h2>
+            <div class="assessment-count">Total Assessments: 1</div>
+
+            <div class="assessment-card">
+                <h3>Assessment #1</h3>
+                <div class="field-grid">
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Properties:</div>
+                        <div class="field-value">1</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">No Of Floors:</div>
+                        <div class="field-value">0</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Property ID:</div>
+                        <div class="field-value">AS7849000000247573</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">PTIN:</div>
+                        <div class="field-value">1141511518</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Owner Name:</div>
+                        <div class="field-value">K  Phani Kumar</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Door Number:</div>
+                        <div class="field-value">15-31-1/HIG-V-96</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Existing Usage:</div>
+                        <div class="field-value">RES</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Details:</div>
+                        <div class="field-value">[
+  {
+    "Floor": "G",
+    "FloorUsage": "Residential",
+    "classification": "RCC",
+    "usage": "",
+    "FloorPlinth": "1570"
+  }
+]</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floors:</div>
+                        <div class="field-value">G</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Usage:</div>
+                        <div class="field-value">G: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Usage Residential Floor Details:</div>
+                        <div class="field-value">G: Residential</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Residential):</div>
+                        <div class="field-value">G: 1570</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Non-Residential Floor Usage Details:</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Floor Wise Plinth Area (Non-Residential):</div>
+                        <div class="field-value">null</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Residential Plinth Area:</div>
+                        <div class="field-value">1570</div>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field-label">Total Plinth Area:</div>
+                        <div class="field-value">1570</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="footer">
+            <p>Generated by GHMC Building Assessment System</p>
+            <p>Building ID: B2311400133 | Processed: 2025-10-25 13:54</p>
+        </div>
+    </div>
+</body>
+</html>
